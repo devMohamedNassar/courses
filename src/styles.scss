@@ -1,0 +1,97 @@
+
+/*
+* PRIMARY FONT
+*/
+@font-face {
+  font-family: 'Myriad Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Myriad Pro Regular'), url('assets/fonts/MYRIADPRO-REGULAR.woff') format('woff');
+}
+@font-face {
+  font-family: 'Myriad Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Myriad Pro Light'), url('assets/fonts/MyriadPro-Light.woff') format('woff');
+}
+@font-face {
+  font-family: 'Myriad Pro';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Myriad Pro Semibold'), url('assets/fonts/MYRIADPRO-SEMIBOLD.woff') format('woff');
+}
+@font-face {
+  font-family: 'Myriad Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Myriad Pro Bold'), url('assets/fonts/MYRIADPRO-BOLD.woff') format('woff');
+}
+  
+  
+/*
+* GLOBAL STYLES
+*/
+:root {
+  --primary-color: #53af53;
+  --secondary-color: #17c178;
+  --text-color: #c0c0c0;
+  --bg: #121212;
+  --bg-2: #181818;
+}
+
+body {
+  font-family: 'Myriad Pro', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  background-color: var(--bg);
+  color: var(--text-color);
+}
+
+input[type="checkbox"] {
+  width: 16px !important;
+  height: 14px !important;
+  margin: 5px;
+  margin-right: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  outline: 1px solid #302e2e;
+  box-shadow: none;
+  text-align: center;
+  line-height: 1em;
+  background: #302e2e;
+}
+input[type='checkbox']:checked {
+  background: var(--secondary-color);
+  outline: 1px solid var(--secondary-color);
+}
+input[type='checkbox']:after {
+  content: '✔';
+  color: transparent;
+  font-size: 11px;
+  font-weight: 700;
+}
+input[type='checkbox']:checked:after {
+  color: #171717;
+}
+input[type="checkbox"] ~ label {
+  font-size: 18px;
+  color: #d1d1d1;
+}
+
+hr {
+  border-top-color: #323232;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  @media(min-width: 1200px){
+    max-width: 1430px;
+  }
+}

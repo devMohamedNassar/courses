@@ -1,0 +1,11 @@
+<div class="my-courses">
+  <h3 class="my-courses__title">My Courses</h3>
+  <ul #myCoursesList class="my-courses__list list-unstyled">
+    <li *ngFor="let item of myCourses$ | async" class="my-courses-item mb-3 pb-3">
+      <div class="d-flex align-items-center">
+        <img [src]="item.CourseImg" [alt]="item.CourseName"  class="my-courses-item__img mr-3">
+        <h3  class="my-courses-item__title">{{item.CourseName}}</h3>
+      </div>
+    </li>
+  </ul>
+</div>

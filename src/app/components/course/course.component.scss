@@ -1,0 +1,40 @@
+.course-card {
+  margin-bottom: 50px;
+  background-color: var(--bg-2);
+  border-radius: 13px;
+
+  &__img {
+    height: 234px;
+    width: 100%;
+    object-fit: cover;
+  }
+  &__inner-content {
+    padding: 20px;
+  }
+  &__name {
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+  &__level,
+  &__available-seats,
+  &__duration,
+  &__price {
+    color: #858585;
+  }
+  &__action {
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--primary-color);
+    padding: 5px 12px;
+    box-shadow: none;
+    border-radius: 13px;
+  }
+}

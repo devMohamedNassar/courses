@@ -1,0 +1,17 @@
+h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #d1d1d1;
+
+  span {
+    padding-bottom: 40px;
+    border-bottom: 6px solid var(--primary-color);
+  }
+}
+
+.px-9px {
+  @media(min-width: 786px){
+    padding-left: 9px !important;
+    padding-right: 9px !important;
+  }
+}

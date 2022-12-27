@@ -1,0 +1,23 @@
+<div class="filter">
+  <h3 class="filter__title">Filter By:</h3>
+  <div class="filter__by-duration">
+    <h4 class="filter__subtitle">Course Duration</h4>
+    <ul class="list-unstyled">
+      <li *ngFor="let item of filterByDuration; let i = index" class="filter__item">
+        <input id="filterByDuration{{i}}" ngModel (ngModelChange)="updateFilter($event, item)" type="checkbox">
+        <label for="filterByDuration{{i}}">{{item.text}}</label>
+      </li>
+    </ul>
+  </div>
+  <hr>
+  <div class="filter__by-cat">
+    <h4 class="filter__subtitle">All Categories</h4>
+    <ul class="list-unstyled">
+      <li *ngFor="let item of filterByCat; let i = index" class="filter__item">
+        <input id="filterByCat{{i}}" ngModel (ngModelChange)="updateFilter($event, item)" type="checkbox">
+        <label for="filterByCat{{i}}">{{item.text}}</label>
+      </li>
+    </ul>
+  </div>
+  <hr>
+</div>

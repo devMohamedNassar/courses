@@ -1,0 +1,21 @@
+.filter {
+  background-color: var(--bg-2);
+  padding: 20px;
+  border-radius: 8px;
+
+  &__title {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    color: #d1d1d1;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  label, input[type="checkbox"] {
+    cursor: pointer;
+  }
+}

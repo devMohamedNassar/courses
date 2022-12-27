@@ -1,0 +1,71 @@
+.my-courses {
+  background-color: var(--bg-2);
+  padding: 20px;
+  margin-top: 25px;
+
+  &__title {
+    color: var(--secondary-color);
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    margin-right: -12px;
+    padding-right: 12px;
+    max-height: 310px;
+    overflow: auto;
+    margin-bottom: 0;
+    &::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
+    &::-webkit-scrollbar-button {
+      width: 0px;
+      height: 0px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.916);
+      border: none;
+      border-radius: 0px;
+    }
+    &::-webkit-scrollbar-thumb:hover,
+    &::-webkit-scrollbar-thumb:active {
+      background: #000;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+      border: 0px none #ffffff;
+      border-radius: 0px;
+    }
+    &::-webkit-scrollbar-track:hover {
+      background: transparent;
+    }
+    &::-webkit-scrollbar-track:active {
+      background: transparent;
+    }
+    &::-webkit-scrollbar-corner {
+      background: transparent;
+    }
+    
+  }
+
+  &-item {
+    border-bottom: 1px solid #323232;
+    &:last-of-type {
+      border: none;
+      padding-bottom: 0 !important;
+      margin-bottom: 0 !important;
+    }
+    &__img {
+      width: 60px;
+      height: 40px;
+      object-fit: cover;
+    }
+    &__title {
+      color: #c0c0c0;
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 0;
+    }
+  }
+}

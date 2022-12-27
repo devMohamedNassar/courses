@@ -1,0 +1,21 @@
+<div class="course-card">
+  <img [src]="course.CourseImg" [alt]="course.CourseName" class="course-card__img" />
+  <div class="course-card__inner-content">
+    <h3 class="course-card__name">{{course.CourseName}}</h3>
+    <div class="course-card__footer">
+      <div style="width: 170px;">
+        <div class="d-flex justify-content-between">
+          <p class="course-card__level mb-2">{{course.courseLevel}}</p>
+          <p class="course-card__available-seats mb-2">
+            <img [src]="'assets/icons/'+ (course.AvailableSeats > 100 ? 'green' : 'orange') +'-people.png'">
+            {{course.AvailableSeats}}</p>
+        </div>
+        <div class="d-flex justify-content-between">
+          <p class="course-card__duration m-0">Duration: {{course.CourseDuration}}</p>
+          <p class="course-card__price m-0">{{course.CoursePrice | currency}}</p>
+        </div>
+      </div>
+      <button (click)="addToCart()" [disabled]="addedToCart" class="course-card__action mt-3">Add to cart</button>
+    </div>
+  </div>
+</div>
